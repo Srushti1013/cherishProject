@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CherishPrototype">
         <activity
-            android:name=".LoadContacts"
+            android:name=".EditDataActivity"
             android:exported="false" />
         <activity
             android:name=".SavedContacts"

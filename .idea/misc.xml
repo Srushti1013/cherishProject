@@ -3,11 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Patar/AndroidStudioProjects/CherishPrototype/app/src/main/res/layout/activity_home.xml" value="0.28940217391304346" />
-        <entry key="..\:/Users/Patar/AndroidStudioProjects/CherishPrototype/app/src/main/res/layout/activity_load_contacts.xml" value="0.2203125" />
-        <entry key="..\:/Users/Patar/AndroidStudioProjects/CherishPrototype/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
-        <entry key="..\:/Users/Patar/AndroidStudioProjects/CherishPrototype/app/src/main/res/layout/activity_saved_contacts.xml" value="0.2726449275362319" />
-        <entry key="..\:/Users/Patar/AndroidStudioProjects/CherishPrototype/app/src/main/res/layout/activity_xd.xml" value="0.2203125" />
+        <entry key="..\:/Users/Patar/AndroidStudioProjects/CherishPrototype/app/src/main/res/layout/activity_edit_data.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
