@@ -20,6 +20,7 @@ public class SelectContacts extends AppCompatActivity {
     Button btnAdd,btnView;
     ArrayList arrayList;
     ArrayAdapter<String> arrayAdapter;
+    private static final String TAG = "SelectContacts";
     private ListView lv;
     ArrayList savedList;
 
@@ -29,12 +30,11 @@ public class SelectContacts extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_contacts);
         lv = findViewById(R.id.lv);
-        //editText = (EditText) findViewById(R.id.editText);
         btnAdd = (Button) findViewById(R.id.btnAdd);
         btnView = (Button) findViewById(R.id.btnView);
 
         myDB = new DatabaseHelper(this);
-        arrayList = (ArrayList<String>) getIntent().getSerializableExtra("key");
+        arrayList = (ArrayList<String>) getIntent().getSerializableExtra("imported");
         savedList = new ArrayList<>();
         arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, arrayList);
 
@@ -66,6 +66,7 @@ public class SelectContacts extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SelectContacts.this, SavedContacts.class);
+                intent.putExtra("key",arrayList);
                 startActivity(intent);
             }
         });

@@ -29,12 +29,13 @@
 
     <ListView
         android:id="@+id/lv"
-        android:layout_width="410dp"
-        android:layout_height="538dp"
+        android:layout_width="341dp"
+        android:layout_height="536dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.544" />
+        app:layout_constraintVertical_bias="0.43"/>
 
     <Button
         android:id="@+id/btnAdd"

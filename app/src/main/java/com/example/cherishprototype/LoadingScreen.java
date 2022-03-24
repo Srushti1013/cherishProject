@@ -52,11 +52,12 @@ public class LoadingScreen extends AppCompatActivity {
                 Intent homeIntent;
                 if(data.getCount()!=0){
                     homeIntent=new Intent(LoadingScreen.this, SavedContacts.class);
+
                 }
                 else{
                     homeIntent=new Intent(LoadingScreen.this, SelectContacts.class);
-                    homeIntent.putExtra("key", arrayList);
                 }
+                homeIntent.putExtra("key", arrayList);
                 startActivity(homeIntent);
                 finish();
             }

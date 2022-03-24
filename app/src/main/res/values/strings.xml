@@ -1,6 +1,7 @@
 <resources>
+    <string name="forward">forward</string>
+    <string name="back">back</string>
     <string name="app_name">CherishPrototype</string>
-    <string name="title_activity_settings">SettingsActivity</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>

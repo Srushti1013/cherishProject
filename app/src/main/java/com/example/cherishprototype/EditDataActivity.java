@@ -27,7 +27,7 @@ import java.util.List;
 public class EditDataActivity extends AppCompatActivity{
 
     private static final String TAG = "EditDataActivity";
-    private Button btnSave,btnDelete,btnNotif,btnCalendar;
+    private Button btnSave,btnDelete,btnNotif ;
     private EditText editable_item;
     DatabaseHelper mDatabaseHelper;
     private String selectedName;
@@ -39,7 +39,6 @@ public class EditDataActivity extends AppCompatActivity{
         btnSave = (Button) findViewById(R.id.btnSave);
         btnDelete = (Button) findViewById(R.id.btnDelete);
         btnNotif = (Button) findViewById(R.id.btnNotif);
-        btnCalendar = (Button) findViewById(R.id.btnCalendar);
         editable_item = (EditText) findViewById(R.id.editable_item);
         mDatabaseHelper = new DatabaseHelper(this);
 

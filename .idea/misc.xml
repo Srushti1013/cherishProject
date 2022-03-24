@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Patar/AndroidStudioProjects/CherishPrototype/app/src/main/res/layout/activity_calendar.xml" value="0.3482789855072464" />
         <entry key="..\:/Users/Patar/AndroidStudioProjects/CherishPrototype/app/src/main/res/layout/activity_edit_data.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Patar/AndroidStudioProjects/CherishPrototype/app/src/main/res/layout/activity_notification_set.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Patar/AndroidStudioProjects/CherishPrototype/app/src/main/res/layout/activity_saved_contacts.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Patar/AndroidStudioProjects/CherishPrototype/app/src/main/res/layout/activity_select_contacts.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Patar/AndroidStudioProjects/CherishPrototype/app/src/main/res/layout/calendar_cell.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Patar/AndroidStudioProjects/CherishPrototype/app/src/main/res/layout/settings_activity.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

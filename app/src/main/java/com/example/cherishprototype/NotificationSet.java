@@ -21,7 +21,6 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Calendar;
 import java.util.List;
 
 public class NotificationSet extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
@@ -98,6 +97,14 @@ public class NotificationSet extends AppCompatActivity implements AdapterView.On
 
                 //alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, timeAtButtonClick, timeAtButtonClick + time,pendingIntent);
 
+            }
+        });
+
+        btnCalendar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(NotificationSet.this, Calendar.class);
+                startActivity(intent);
             }
         });
     }
