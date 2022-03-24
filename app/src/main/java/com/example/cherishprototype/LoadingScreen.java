@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 public class LoadingScreen extends AppCompatActivity {
     ArrayList<String> arrayList;
-    Button button;
+    DatabaseHelper db;
 
     private static int SPLASH_TIME_OUT = 4000;
 
@@ -31,6 +31,8 @@ public class LoadingScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.loading_screen);
+        db = new DatabaseHelper(this);
+        Cursor data =db.getListContents();
 
 
 
@@ -47,8 +49,14 @@ public class LoadingScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent homeIntent = new Intent(LoadingScreen.this, SelectContacts.class);
-                homeIntent.putExtra("key", arrayList);
+                Intent homeIntent;
+                if(data.getCount()!=0){
+                    homeIntent=new Intent(LoadingScreen.this, SavedContacts.class);
+                }
+                else{
+                    homeIntent=new Intent(LoadingScreen.this, SelectContacts.class);
+                    homeIntent.putExtra("key", arrayList);
+                }
                 startActivity(homeIntent);
                 finish();
             }

@@ -47,11 +47,8 @@ public class SelectContacts extends AppCompatActivity {
                         savedList.add(arrayList.get(i));
                         lv.getChildAt(i).setBackgroundColor(Color.GRAY);
                         lv.getChildAt(i).setFocusable(true);
-
                     }
                 }
-
-
             }
         });
 
@@ -65,9 +62,6 @@ public class SelectContacts extends AppCompatActivity {
             }
         });
 
-
-
-
         btnView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -75,9 +69,6 @@ public class SelectContacts extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
     }
 
     public void AddData(String newEntry) {

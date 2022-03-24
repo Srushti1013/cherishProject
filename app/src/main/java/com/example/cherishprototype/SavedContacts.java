@@ -27,15 +27,17 @@ import java.util.Collections;
 public class SavedContacts extends AppCompatActivity {
 
     DatabaseHelper myDB;
-
     private static final String TAG = "ListDataActivity";
+    ListView listView;
+    Button btnImport;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saved_contacts);
 
-        ListView listView = (ListView) findViewById(R.id.listView);
+        listView = (ListView) findViewById(R.id.listView);
+        btnImport = (Button) findViewById(R.id.btnImport);
         myDB = new DatabaseHelper(this);
 
         //populate an ArrayList<String> from the database and then view it
