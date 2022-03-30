@@ -11,8 +11,10 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.ContactsContract;
+import com.example.cherishprototype.login.Login;
 
 import com.example.cherishprototype.R;
+import com.example.cherishprototype.login.RegisterScreen;
 
 import java.util.ArrayList;
 
@@ -52,10 +54,9 @@ public class LoadingScreen extends AppCompatActivity {
                 Intent homeIntent;
                 if(data.getCount()!=0){
                     homeIntent=new Intent(LoadingScreen.this, SavedContacts.class);
-
                 }
                 else{
-                    homeIntent=new Intent(LoadingScreen.this, SelectContacts.class);
+                    homeIntent=new Intent(LoadingScreen.this, RegisterScreen.class);
                 }
                 homeIntent.putExtra("key", arrayList);
                 startActivity(homeIntent);

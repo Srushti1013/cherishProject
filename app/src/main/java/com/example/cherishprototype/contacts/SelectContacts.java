@@ -36,7 +36,7 @@ public class SelectContacts extends AppCompatActivity {
         btnView = (Button) findViewById(R.id.btnView);
 
         myDB = new DatabaseHelper(this);
-        arrayList = (ArrayList<String>) getIntent().getSerializableExtra("key");
+        arrayList = (ArrayList<String>) getIntent().getSerializableExtra("key2");
         savedList = new ArrayList<>();
         arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, arrayList);
 

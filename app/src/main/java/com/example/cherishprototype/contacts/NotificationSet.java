@@ -76,7 +76,7 @@ public class NotificationSet extends AppCompatActivity implements AdapterView.On
                 AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
                 long timeAtButtonClick = System.currentTimeMillis();
                 if(text.equals("Daily")){
-                    alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,timeAtButtonClick + 5000, AlarmManager.INTERVAL_DAY, pendingIntent);
+                    alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,timeAtButtonClick + 5000, 5000, pendingIntent);
                 }
                 else if(text.equals("Weekly")){
                     alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,timeAtButtonClick + 5000, AlarmManager.INTERVAL_DAY * 7, pendingIntent);
