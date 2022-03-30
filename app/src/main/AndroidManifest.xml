@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 
     <application
         android:allowBackup="true"
@@ -13,27 +14,35 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CherishPrototype">
         <activity
-            android:name=".Calendar"
+            android:name=".calendar.EventEdit"
             android:exported="false"
             android:theme="@style/Theme.Design.Light.NoActionBar"/>
         <activity
-            android:name=".NotificationSet"
+            android:name=".calendar.WeekViewActivity"
             android:exported="false"
             android:theme="@style/Theme.Design.Light.NoActionBar"/>
         <activity
-            android:name=".EditDataActivity"
+            android:name=".calendar.Calendar"
             android:exported="false"
             android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
-            android:name=".SavedContacts"
+            android:name=".contacts.NotificationSet"
             android:exported="false"
             android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
-            android:name=".SelectContacts"
+            android:name=".contacts.EditDataActivity"
             android:exported="false"
             android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
-            android:name=".LoadingScreen"
+            android:name=".contacts.SavedContacts"
+            android:exported="false"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".contacts.SelectContacts"
+            android:exported="false"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".contacts.LoadingScreen"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
@@ -43,7 +52,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".ReminderBroadcast" />
+        <receiver android:name=".contacts.ReminderBroadcast" />
     </application>
 
 </manifest>
