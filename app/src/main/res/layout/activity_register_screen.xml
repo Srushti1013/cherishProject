@@ -9,24 +9,21 @@
 
 
     <TextView
-        android:id="@+id/loginTitle2"
-        android:layout_width="wrap_content"
-        android:layout_height="52dp"
-        android:layout_alignParentStart="true"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="603dp"
-        android:fontFamily="sans-serif-condensed-light"
-        android:text="Create Account"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="#FFFFFF"
-        android:textStyle="normal" />
+        android:layout_gravity="center"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:padding="10dp"
+
+
+        android:text="CHERISH"
+        android:textColor="@color/white"
+        android:textSize="60sp" />
 
     <EditText
         android:id="@+id/et_username"
@@ -43,7 +40,9 @@
         android:hint="Username"
         android:inputType="text"
         android:textColor="@color/white"
-        android:textColorHint="@color/gray" />
+        android:textColorHint="@color/gray"
+        android:background="@drawable/edit_text_box"
+        android:drawableStart="@drawable/ic_name"/>
 
     <EditText
         android:id="@+id/et_password"
@@ -60,7 +59,9 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:textColor="@color/white"
-        android:textColorHint="@color/gray" />
+        android:textColorHint="@color/gray"
+        android:drawableStart="@drawable/ic_lock"
+        android:background="@drawable/edit_text_box"/>
 
     <EditText
         android:id="@+id/et_cpassword"
@@ -77,7 +78,9 @@
         android:hint="Confirm Password"
         android:inputType="textPassword"
         android:textColor="@color/white"
-        android:textColorHint="@color/gray" />
+        android:textColorHint="@color/gray"
+        android:drawableStart="@drawable/ic_lock"
+        android:background="@drawable/edit_text_box"/>
 
     <EditText
         android:id="@+id/et_email"
@@ -94,7 +97,9 @@
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:textColor="@color/white"
-        android:textColorHint="@color/gray" />
+        android:textColorHint="@color/gray"
+        android:background="@drawable/edit_text_box"
+        android:drawableStart="@drawable/mail"/>
 
     <Button
         android:id="@+id/btn_register"

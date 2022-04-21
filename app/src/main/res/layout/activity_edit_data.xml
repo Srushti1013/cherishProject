@@ -86,20 +86,15 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="253dp"
-                    android:layout_height="52dp"
-                    android:text="Full Name"
-                    android:textColor="@color/accent"
-                    android:textSize="24sp" />
-
                 <EditText
                     android:id="@+id/editName"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="66dp"
+                    android:background="@drawable/edit_text_box"
+                    android:drawableStart="@drawable/ic_name"
                     android:inputType="text"
                     android:textColor="@color/black"
-                    android:textSize="18sp" />
+                    android:textSize="24sp" />
 
             </LinearLayout>
 
@@ -108,20 +103,15 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="253dp"
-                    android:layout_height="53dp"
-                    android:text="Phone Number"
-                    android:textColor="@color/accent"
-                    android:textSize="24sp" />
-
                 <EditText
                     android:id="@+id/editPhone"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="66dp"
+                    android:background="@drawable/edit_text_box"
+                    android:drawableStart="@drawable/ic_phone"
                     android:inputType="text"
                     android:textColor="@color/black"
-                    android:textSize="18sp" />
+                    android:textSize="30sp" />
 
 
             </LinearLayout>

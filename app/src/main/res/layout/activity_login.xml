@@ -21,10 +21,12 @@
         android:layout_marginEnd="59dp"
         android:backgroundTint="@color/black"
         android:ems="10"
-        android:hint="Username"
+        android:hint="Email"
         android:inputType="text"
         android:textColor="@color/white"
-        android:textColorHint="@color/gray" />
+        android:textColorHint="@color/gray"
+        android:drawableStart="@drawable/mail"
+        android:background="@drawable/edit_text_box"/>
 
     <EditText
         android:id="@+id/et_lpassword"
@@ -37,26 +39,11 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="59dp"
         android:backgroundTint="@color/black"
+        android:background="@drawable/edit_text_box"
         android:ems="10"
         android:hint="Password"
+        android:drawableStart="@drawable/ic_lock"
         android:inputType="textPassword"
-        android:textColor="@color/white"
-        android:textColorHint="@color/gray" />
-
-    <EditText
-        android:id="@+id/et_lemail"
-        android:layout_width="305dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/et_lpassword"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="59dp"
-        android:backgroundTint="@color/black"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
         android:textColor="@color/white"
         android:textColorHint="@color/gray" />
 
@@ -64,9 +51,9 @@
         android:id="@+id/btn_llogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/et_lemail"
+        android:layout_below="@+id/et_lpassword"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="106dp"
         android:background="@drawable/custom_button2"
         android:ems="10"
         android:text="Login"
@@ -90,23 +77,19 @@
         android:textColor="@color/white" />
 
     <TextView
-        android:id="@+id/loginTitle"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="73dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="84dp"
-        android:layout_marginBottom="602dp"
-        android:fontFamily="sans-serif-condensed-light"
+        android:layout_gravity="center"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:padding="10dp"
         android:text="CHERISH"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="#FFFFFF"
-        android:textStyle="normal" />
+
+
+        android:textColor="@color/white"
+        android:textSize="60sp" />
 
 </RelativeLayout>
