@@ -4,86 +4,126 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context=".login.RegisterScreen">
+    tools:context=".login.RegisterScreen"
+    android:background="@drawable/grad2">
 
 
     <TextView
-        android:id="@+id/registerTitle"
-        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:id="@+id/loginTitle2"
         android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="603dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Create Account"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="305dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="153dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="154dp"
-
-        android:fontFamily="serif"
-        android:text="REGISTER"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        android:textStyle="bold"
-        android:typeface="sans"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.46"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
-
-    <EditText
-        android:id="@+id/et_username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="65dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="193dp"
+        android:layout_marginEnd="59dp"
+        android:backgroundTint="@color/black"
         android:ems="10"
+        android:hint="Username"
         android:inputType="text"
-        android:hint="Username"/>
-
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray" />
 
     <EditText
         android:id="@+id/et_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="65dp"
-        android:ems="10"
         android:layout_below="@+id/et_username"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="59dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:hint="Password"
         android:inputType="textPassword"
-        android:hint="Password"/>
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray" />
 
     <EditText
         android:id="@+id/et_cpassword"
-        android:layout_width="wrap_content"
+        android:layout_width="305dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="65dp"
-        android:ems="10"
         android:layout_below="@+id/et_password"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="59dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:hint="Confirm Password"
         android:inputType="textPassword"
-        android:hint="Confirm Password"/>
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_cpassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="59dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray" />
 
     <Button
         android:id="@+id/btn_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="65dp"
+        android:layout_below="@+id/et_email"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="124dp"
+        android:background="@drawable/custom_button2"
         android:ems="10"
         android:text="SIGN UP"
-        android:layout_below="@+id/et_cpassword" />
+        android:textColor="@color/accent" />
 
     <Button
         android:id="@+id/btn_login"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_height="38dp"
+        android:layout_below="@+id/btn_register"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="124dp"
         android:ems="10"
-        android:text="Login"
-        android:layout_alignParentBottom="true"/>
+        android:text="I have an Account"
+        android:textColor="@color/white" />
 
 </RelativeLayout>

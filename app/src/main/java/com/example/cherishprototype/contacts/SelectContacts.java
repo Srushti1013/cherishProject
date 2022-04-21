@@ -25,6 +25,7 @@ public class SelectContacts extends AppCompatActivity {
     private static final String TAG = "SelectContacts";
     private ListView lv;
     ArrayList savedList;
+    String name;
 
 
     @Override
@@ -37,8 +38,9 @@ public class SelectContacts extends AppCompatActivity {
 
         myDB = new DatabaseHelper(this);
         arrayList = (ArrayList<String>) getIntent().getSerializableExtra("key2");
+        name = (String) getIntent().getSerializableExtra("name");
         savedList = new ArrayList<>();
-        arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, arrayList);
+        arrayAdapter = new ArrayAdapter<>(this, R.layout.listviewcustom, arrayList);
 
         lv.setAdapter(arrayAdapter);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -68,7 +70,8 @@ public class SelectContacts extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SelectContacts.this, SavedContacts.class);
-                intent.putExtra("key",arrayList);
+                //intent.putExtra("key",arrayList);
+                intent.putExtra("name",name);
                 startActivity(intent);
             }
         });

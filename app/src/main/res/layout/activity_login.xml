@@ -4,72 +4,109 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/grad2"
+    android:textAlignment="center"
     tools:context="login.Login">
 
-    <TextView
-        android:id="@+id/loginTitle"
-        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-        android:layout_width="wrap_content"
+
+    <EditText
+        android:id="@+id/et_lusername"
+        android:layout_width="305dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="171dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="171dp"
-        android:fontFamily="serif"
-        android:text="LOGIN"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        android:textStyle="bold"
-        android:typeface="sans"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.46"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
-
-    <EditText
-        android:id="@+id/et_lusername"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="145dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="193dp"
+        android:layout_marginEnd="59dp"
+        android:backgroundTint="@color/black"
         android:ems="10"
+        android:hint="Username"
         android:inputType="text"
-        android:hint="Username" />
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray" />
 
     <EditText
         android:id="@+id/et_lpassword"
-        android:layout_width="wrap_content"
+        android:layout_width="305dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/et_lusername"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="59dp"
+        android:backgroundTint="@color/black"
         android:ems="10"
+        android:hint="Password"
         android:inputType="textPassword"
-        android:hint="Password" />
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray" />
+
+    <EditText
+        android:id="@+id/et_lemail"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_lpassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="59dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray" />
 
     <Button
         android:id="@+id/btn_llogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/et_lpassword"
+        android:layout_below="@id/et_lemail"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
+        android:background="@drawable/custom_button2"
         android:ems="10"
-        android:text="Login"/>
+        android:text="Login"
+        android:textColor="@color/accent" />
 
     <Button
         android:id="@+id/btn_lregister"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_llogin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="184dp"
+        android:ems="10"
+        android:text="New user?  Register Now"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/loginTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:text="Register"/>
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="602dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="CHERISH"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal" />
 
 </RelativeLayout>

@@ -18,7 +18,7 @@ public class RegisterScreen extends AppCompatActivity {
     ArrayList<String> arrayList;
 
 
-    EditText et_username, et_password, et_cpassword;
+    EditText et_username, et_password, et_cpassword, et_email;
     Button btn_register, btn_login;
 
     @Override
@@ -30,19 +30,13 @@ public class RegisterScreen extends AppCompatActivity {
         et_username = (EditText)findViewById(R.id.et_username);
         et_password = (EditText)findViewById(R.id.et_password);
         et_cpassword = (EditText)findViewById(R.id.et_cpassword);
+        et_email = (EditText)findViewById(R.id.et_email);
         btn_register = (Button)findViewById(R.id.btn_register);
         btn_login = (Button)findViewById(R.id.btn_login);
         //get arraylist from loadingscreen
         arrayList = (ArrayList<String>) getIntent().getSerializableExtra("key");
 
-        btn_login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(RegisterScreen.this, Login.class);
-                intent.putExtra("key2",arrayList);
-                startActivity(intent);
-            }
-        });
+
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,6 +56,10 @@ public class RegisterScreen extends AppCompatActivity {
                                 et_username.setText("");
                                 et_password.setText("");
                                 et_cpassword.setText("");
+                                et_email.setText("");
+                                Intent intent = new Intent(RegisterScreen.this,Login.class);
+                                intent.putExtra("key2",arrayList);
+                                startActivity(intent);
                             }
                         }else{
                             Toast.makeText(getApplicationContext(), "Username already taken", Toast.LENGTH_SHORT).show();
@@ -70,6 +68,15 @@ public class RegisterScreen extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "Password does not match", Toast.LENGTH_SHORT).show();
                     }
                 }
+
+            }
+        });
+        btn_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RegisterScreen.this, Login.class);
+                intent.putExtra("key2",arrayList);
+                startActivity(intent);
             }
         });
     }

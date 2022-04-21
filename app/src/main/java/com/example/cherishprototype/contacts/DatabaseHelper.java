@@ -126,4 +126,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             return false;
         }
     }
+    public Cursor getUserName(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor data = db.rawQuery("SELECT * FROM user", null);
+        return data;
+    }
+
+    public void updatePassword(String newPassword, int id, String oldPassword){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "UPDATE user SET password" + newPassword + "WHERE";
+        Log.d(TAG, "updateName: query: " + query);
+        Log.d(TAG, "updateName: Setting password to " + newPassword);
+        db.execSQL(query);
+    }
 }

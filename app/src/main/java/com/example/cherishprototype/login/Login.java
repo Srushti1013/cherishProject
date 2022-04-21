@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class Login extends AppCompatActivity {
     Button btn_lregister, btn_llogin;
     EditText et_lusername, et_lpassword;
-    ArrayList arrayList, arrayList2;
+    ArrayList  arrayList2;
 
     DatabaseHelper databaseHelper;
 
@@ -40,6 +40,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Login.this, RegisterScreen.class);
+                intent.putExtra("key", arrayList2);
                 startActivity(intent);
             }
         });
@@ -54,6 +55,7 @@ public class Login extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(Login.this, SelectContacts.class);
                     intent.putExtra("key2", arrayList2);
+                    intent.putExtra("name", username);
                     startActivity(intent);
                 } else {
                     Toast.makeText(getApplicationContext(), "Invalid username or password", Toast.LENGTH_SHORT).show();

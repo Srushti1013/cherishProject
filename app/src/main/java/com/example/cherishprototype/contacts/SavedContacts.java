@@ -8,8 +8,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,8 +25,9 @@ public class SavedContacts extends AppCompatActivity {
     DatabaseHelper myDB;
     private static final String TAG = "SavedContacts";
     ListView listView;
-    Button btnCalendar;
-    ArrayList<String> importedContacts;
+    String name;
+    Button profBtn, calendarBtn;
+
 
 
     @Override
@@ -34,8 +37,8 @@ public class SavedContacts extends AppCompatActivity {
 
         listView = (ListView) findViewById(R.id.listView);
         myDB = new DatabaseHelper(this);
-        btnCalendar = (Button) findViewById(R.id.btnCalendar2);
-        importedContacts = (ArrayList<String>) getIntent().getSerializableExtra("key");
+        profBtn = (Button) findViewById(R.id.profbtn);
+        calendarBtn = (Button) findViewById(R.id.calendarbtn);
 
         //populate an ArrayList<String> from the database and then view it
         ArrayList<String> theList = new ArrayList<>();
@@ -45,7 +48,7 @@ public class SavedContacts extends AppCompatActivity {
         }else{
             while(data.moveToNext()){
                 theList.add(data.getString(1));
-                ListAdapter listAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,theList);
+                ListAdapter listAdapter = new ArrayAdapter<>(this,R.layout.listviewcustom,theList);
                 Collections.sort(theList);
                 listView.setAdapter(listAdapter);
             }
@@ -75,11 +78,21 @@ public class SavedContacts extends AppCompatActivity {
             }
         });
 
-        btnCalendar.setOnClickListener(new View.OnClickListener() {
+
+        calendarBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(SavedContacts.this, com.example.cherishprototype.calendar.Calendar.class);
                 startActivity(intent);
+            }
+        });
+
+        profBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent profIntent = new Intent(SavedContacts.this, ProfilePage.class);
+                profIntent.putExtra("name", name);
+                startActivity(profIntent);
             }
         });
 

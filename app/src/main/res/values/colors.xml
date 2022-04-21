@@ -9,4 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#888</color>
     <color name="blue">#0000FF</color>
+    <color name="accent">#ADD8E6</color>
+    <color name="lyellow">#FFF59E</color>
+    <color name="dblue">#00BFFF</color>
+    <color name="lgray">#ECECEC</color>
+
+
 </resources>

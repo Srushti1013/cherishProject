@@ -45,14 +45,12 @@ public class EditDataActivity extends AppCompatActivity{
         editName.setText(split[0]);
         editPhone.setText(split[1]);
 
-
-
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String name = editName.getText().toString();
                 String number = editPhone.getText().toString();
-                String item = name + ": " + number + "\n";
+                String item = name + ": " + number;
                 if(isValidName(name)==false){
                     toastMessage("You must enter a valid name");
                 }
@@ -73,7 +71,7 @@ public class EditDataActivity extends AppCompatActivity{
                 mDatabaseHelper.deleteName(selectedID,selectedName);
                 editName.setText("");
                 editPhone.setText("");
-                toastMessage("removed from database");
+                toastMessage("Removed from database");
                 Intent backIntent = new Intent(EditDataActivity.this, SavedContacts.class);
                 startActivity(backIntent);
             }

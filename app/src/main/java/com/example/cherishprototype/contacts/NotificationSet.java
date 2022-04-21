@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -27,18 +28,19 @@ import java.util.List;
 public class NotificationSet extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     private static final String TAG = "NotificationSet";
-    private Button btnCalendar,btnSaveNotif;
+    private Button btnSaveNotif;
     private List<String> timeArray;
     Spinner spin;
     DatabaseHelper mDatabaseHelper;
     private String selectedName;
+    ImageView btnCalendar;
     String[] timeIntervals = { "Daily", "Weekly", "Monthly", "Yearly", "No Reminder"};
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification_set);
-        btnCalendar = (Button) findViewById(R.id.btnCalendar);
+        btnCalendar = (ImageView) findViewById(R.id.btnCalendar);
         btnSaveNotif = (Button) findViewById(R.id.btnSaveNotif);
         spin =(Spinner) findViewById(R.id.spinner);
         mDatabaseHelper = new DatabaseHelper(this);
@@ -76,7 +78,7 @@ public class NotificationSet extends AppCompatActivity implements AdapterView.On
                 AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
                 long timeAtButtonClick = System.currentTimeMillis();
                 if(text.equals("Daily")){
-                    alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,timeAtButtonClick + 5000, 5000, pendingIntent);
+                    alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,timeAtButtonClick + 5000, 10000, pendingIntent);
                 }
                 else if(text.equals("Weekly")){
                     alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,timeAtButtonClick + 5000, AlarmManager.INTERVAL_DAY * 7, pendingIntent);
