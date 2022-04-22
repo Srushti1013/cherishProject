@@ -12,6 +12,10 @@ import android.widget.Toast;
 
 import com.example.cherishprototype.R;
 
+/**
+ * Activity that lets the user edit contact information of the contacts they have saved in the app.
+ */
+
 public class EditDataActivity extends AppCompatActivity{
 
     private static final String TAG = "EditDataActivity";

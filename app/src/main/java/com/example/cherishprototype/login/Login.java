@@ -1,11 +1,15 @@
 package com.example.cherishprototype.login;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.example.cherishprototype.R;
 import com.example.cherishprototype.contacts.DatabaseHelper;
@@ -15,54 +19,65 @@ import java.util.ArrayList;
 
 
 public class Login extends AppCompatActivity {
-    Button btn_lregister, btn_llogin;
-    EditText et_lusername, et_lpassword;
-    ArrayList  arrayList2;
-
-    DatabaseHelper databaseHelper;
-
+    EditText email , password;
+    Button btnSubmit;
+    TextView createAcc;
+    DatabaseHelper dbHelper;
+    ArrayList arrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Boolean e=false,p=false;
         setContentView(R.layout.activity_login);
-
-        databaseHelper = new DatabaseHelper(this);
-        arrayList2 = (ArrayList<String>) getIntent().getSerializableExtra("key2");
-
-        et_lusername = (EditText) findViewById(R.id.et_lusername);
-        et_lpassword = (EditText) findViewById(R.id.et_lpassword);
-
-        btn_llogin = (Button) findViewById(R.id.btn_llogin);
-        btn_lregister = (Button) findViewById(R.id.btn_lregister);
-
-        btn_lregister.setOnClickListener(new View.OnClickListener() {
+        email=findViewById(R.id.text_email);
+        password=findViewById(R.id.text_pass);
+        btnSubmit = findViewById(R.id.btnSubmit_login);
+        dbHelper = new DatabaseHelper(this);
+        arrayList = (ArrayList<String>) getIntent().getSerializableExtra("key2");
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Login.this, RegisterScreen.class);
-                intent.putExtra("key", arrayList2);
+            public void onClick(View view) {
+
+                String emailCheck = email.getText().toString();
+                String passCheck = password.getText().toString();
+                Cursor cursor = dbHelper.getData2();
+
+                if(cursor.getCount() == 0){
+                    Toast.makeText(Login.this,"No entries Exists",Toast.LENGTH_LONG).show();
+                }
+                if (loginCheck(cursor,emailCheck,passCheck)) {
+                    Intent intent = new Intent(Login.this,SelectContacts.class);
+                    intent.putExtra("key2",arrayList);
+                    email.setText("");
+                    password.setText("");
+                    startActivity(intent);
+                }else {
+                    Toast.makeText(Login.this,"Wrong email or password",Toast.LENGTH_LONG).show();
+                }
+                dbHelper.close();
+            }
+        });
+        createAcc=findViewById(R.id.createAcc);
+        createAcc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Login.this,RegisterScreen.class);
+                intent.putExtra("key",arrayList);
                 startActivity(intent);
             }
         });
-        btn_llogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String username = et_lusername.getText().toString();
-                String password = et_lpassword.getText().toString();
 
-                Boolean checklogin = databaseHelper.CheckLogin(username, password);
-                if (checklogin == true) {
-                    Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(Login.this, SelectContacts.class);
-                    intent.putExtra("key2", arrayList2);
-                    intent.putExtra("name", username);
-                    startActivity(intent);
-                } else {
-                    Toast.makeText(getApplicationContext(), "Invalid username or password", Toast.LENGTH_SHORT).show();
+    }
+    public static boolean loginCheck(Cursor cursor,String emailCheck,String passCheck) {
+        while (cursor.moveToNext()){
+            if (cursor.getString(0).equals(emailCheck)) {
+                if (cursor.getString(2).equals(passCheck)) {
+                    return true;
                 }
-
-
+                return false;
             }
-        });
+        }
+        return false;
     }
 }

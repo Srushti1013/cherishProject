@@ -16,6 +16,10 @@ import com.example.cherishprototype.R;
 
 import java.util.ArrayList;
 
+/**
+ * Activity that has the arraylist of contacts from the user's phone and is able to add them to
+ * the database.
+ */
 public class SelectContacts extends AppCompatActivity {
 
     DatabaseHelper myDB;
@@ -70,7 +74,7 @@ public class SelectContacts extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SelectContacts.this, SavedContacts.class);
-                //intent.putExtra("key",arrayList);
+                intent.putExtra("key",arrayList);
                 intent.putExtra("name",name);
                 startActivity(intent);
             }

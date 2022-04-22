@@ -7,4 +7,5 @@
     android:layout_height="wrap_content"
     android:fontFamily="sans-serif-condensed-light"
     android:textSize="24sp"
-    android:textColor="@color/dblue"/>
+    android:textColor="@color/black"
+    android:gravity="center"/>

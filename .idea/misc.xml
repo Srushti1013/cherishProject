@@ -8,6 +8,7 @@
         <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/drawable/circleborder.xml" value="0.1" />
         <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/drawable/custom_button.xml" value="0.217" />
         <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/drawable/custom_button2.xml" value="0.1" />
+        <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/drawable/custom_button3.xml" value="0.1" />
         <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/drawable/edit_text_box.xml" value="0.1" />
         <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/drawable/grad.xml" value="0.1" />
         <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/drawable/grad2.xml" value="0.1" />
@@ -21,8 +22,8 @@
         <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/drawable/mail.xml" value="0.1" />
         <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/drawable/settings.xml" value="0.1" />
         <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/drawable/user.xml" value="0.1" />
-        <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/layout/activity_calendar.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/layout/activity_edit_data.xml" value="0.2635416666666667" />
+        <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/layout/activity_calendar.xml" value="0.2676767676767677" />
+        <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/layout/activity_edit_data.xml" value="0.21" />
         <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/layout/activity_event_edit.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
@@ -32,7 +33,7 @@
         <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/layout/activity_saved_contacts.xml" value="0.25" />
         <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/layout/activity_select_contacts.xml" value="0.2755208333333333" />
         <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/layout/activity_test.xml" value="0.17831813576494426" />
-        <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/layout/activity_week_view.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/layout/activity_week_view.xml" value="0.2676767676767677" />
         <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/layout/calendar_cell.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/layout/event_cell.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Patar/AndroidStudioProjects/Cherish/app/src/main/res/layout/list_items.xml" value="0.2848731884057971" />

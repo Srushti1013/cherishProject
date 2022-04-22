@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".calendar.EventEdit">
+    tools:context=".calendar.EventEdit"
+    android:background="@drawable/grad">
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,9 +23,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="20sp"
         android:ems="10"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/eventDateTV"
@@ -49,16 +50,15 @@
         android:textColor="@color/black"/>
 
     <Button
-        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save"
-        android:textColor="@color/accent"
-        android:background="@null"
-        android:textStyle="bold"
-        android:onClick="saveEventAction"
         android:layout_gravity="center"
-        android:textSize="20sp"
-        />
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button3"
+        android:fontFamily="sans-serif-condensed-light"
+        android:onClick="saveEventAction"
+        android:text="Save"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
 </LinearLayout>

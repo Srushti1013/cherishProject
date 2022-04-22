@@ -18,6 +18,10 @@ import com.example.cherishprototype.login.RegisterScreen;
 
 import java.util.ArrayList;
 
+/**
+ * A static loading screen that is able to display the Cherish logo for 4000 milliseconds.
+ */
+
 public class LoadingScreen extends AppCompatActivity {
     ArrayList<String> arrayList;
     DatabaseHelper db;

@@ -11,6 +11,10 @@ import androidx.core.app.NotificationManagerCompat;
 
 import com.example.cherishprototype.R;
 
+/**
+ * A reminderBroadcast used to create a notifcation for the alarm function of the app.
+ */
+
 public class ReminderBroadcast extends BroadcastReceiver {
     String body;
     @Override

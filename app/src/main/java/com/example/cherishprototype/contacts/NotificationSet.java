@@ -25,6 +25,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * The notification activity lets the user create notifications that will repeat, notifications
+ * on holidays or redirect the user to the calendar activity to create specific notificatiions.
+ */
+
 public class NotificationSet extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     private static final String TAG = "NotificationSet";
@@ -65,6 +70,7 @@ public class NotificationSet extends AppCompatActivity implements AdapterView.On
         spin.setOnItemSelectedListener(this);
 
 
+        //Creates notifications based on the spinner item selection.
         btnSaveNotif.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -77,8 +83,10 @@ public class NotificationSet extends AppCompatActivity implements AdapterView.On
                 PendingIntent pendingIntent = PendingIntent.getBroadcast(getApplicationContext(),3,intent,PendingIntent.FLAG_UPDATE_CURRENT);
                 AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
                 long timeAtButtonClick = System.currentTimeMillis();
+
+                //for demo purposes this is set to 5 second intervals
                 if(text.equals("Daily")){
-                    alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,timeAtButtonClick + 5000, 10000, pendingIntent);
+                    alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,timeAtButtonClick + 5000, 2500, pendingIntent);
                 }
                 else if(text.equals("Weekly")){
                     alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,timeAtButtonClick + 5000, AlarmManager.INTERVAL_DAY * 7, pendingIntent);

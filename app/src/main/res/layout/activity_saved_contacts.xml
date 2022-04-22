@@ -8,66 +8,54 @@
     android:orientation="vertical"
     android:background="@color/lgray">
 
+
     <RelativeLayout
         android:id="@+id/relativeLayout2"
         android:layout_width="411dp"
         android:layout_height="133dp"
         android:background="@drawable/grad"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="367dp"
-            android:layout_height="52dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="22dp"
-            android:layout_marginTop="39dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="22dp"
             android:fontFamily="sans-serif-condensed-light"
             android:text="SAVED CONTACTS"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="35sp"
             android:textStyle="normal" />
 
 
-
     </RelativeLayout>
-
-
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/grad3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
-        app:layout_constraintVertical_bias="0.031">
-
-
-    </ListView>
 
     <Button
         android:id="@+id/calendarbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="176dp"
         android:background="@drawable/custom_button"
         android:text="Calendar"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profbtn"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.956"
-        android:textColor="@color/white"/>
+        app:layout_constraintVertical_bias="0.952" />
 
     <Button
         android:id="@+id/profbtn"
@@ -75,13 +63,27 @@
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
         android:text="Profile"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.949"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.955"
-        android:textColor="@color/white"/>
+        app:layout_constraintVertical_bias="0.953" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="375dp"
+        android:layout_height="552dp"
+        android:background="@drawable/grad3"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/calendarbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        app:layout_constraintVertical_bias="0.136" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
