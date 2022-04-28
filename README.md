@@ -14,14 +14,15 @@ The application itself was created by using Android Studio, Java programming lan
 Below are few images showing the sign up in page, data flow that we mapped out, and the ER Model:
 
 Registration Page:
+
 <img width = "197" alt = "Login" src="https://user-images.githubusercontent.com/69876473/165800836-d407448e-181e-4376-827b-172506cdf5e2.jpeg">
 
 
 Data Flow:
 
-<img width="368" alt="Screen Shot 2022-04-28 at 12 25 53 PM" src="https://user-images.githubusercontent.com/69876473/165799767-d641b373-762e-44b9-a123-264a1d6278a6.png">
+<img width="468" alt="Screen Shot 2022-04-28 at 12 25 53 PM" src="https://user-images.githubusercontent.com/69876473/165799767-d641b373-762e-44b9-a123-264a1d6278a6.png">
 
 
 ER Model:
 
-<img width="227" alt="Screen Shot 2022-04-28 at 12 27 14 PM" src="https://user-images.githubusercontent.com/69876473/165799997-cb20b6c7-c1ea-4d40-ae61-e3acb16e65a9.png">
+<img width="527" alt="Screen Shot 2022-04-28 at 12 27 14 PM" src="https://user-images.githubusercontent.com/69876473/165799997-cb20b6c7-c1ea-4d40-ae61-e3acb16e65a9.png">
