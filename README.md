@@ -1,7 +1,7 @@
 # Capstone Project:
 ## Cherish: Android Mobile Application:
 <img width="99" alt="Screen Shot 2022-04-28 at 12 27 56 PM" src="https://user-images.githubusercontent.com/69876473/165800151-2e531a7d-65a6-46d4-be12-8d2535493320.png">
-
+#### Access the Doc folder to view the user manual or the report for detailed information.
 
 
 
@@ -18,7 +18,6 @@ The application itself was created by using Android Studio, Java programming lan
 
 
 
-#### Access the Doc folder to view the user manual or the report for detailed information.
 
 ##### Below are few images showing the sign up in page, data flow that we mapped out, and the ER Model:
 
