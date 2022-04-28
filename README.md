@@ -12,8 +12,11 @@ their loved ones and friends.
 The application itself was created by using Android Studio, Java programming language, and Agile methodolgy.
 
 
-The video attched shows how the application runs on the emulator on Android Studio and this is how it will run on an android device. 
-https://youtu.be/XQPVxfDmCIE
+The video attched shows how the application runs on the emulator on Android Studio and this is how it will run on an android device.
+
+[![ytc](https://user-images.githubusercontent.com/69876473/165819795-ce32e1a2-673e-4275-af0e-677021c22323.jpeg)](https://youtu.be/XQPVxfDmCIE)
+
+
 
 
 
