@@ -8,6 +8,7 @@ their loved ones and friends.
 
 The application itself was created by using Android Studio, Java programming language, and Agile methodolgy.
 
+
 Data Flow:
 <img width="968" alt="Screen Shot 2022-04-28 at 12 25 53 PM" src="https://user-images.githubusercontent.com/69876473/165799767-d641b373-762e-44b9-a123-264a1d6278a6.png">
 
