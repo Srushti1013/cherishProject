@@ -11,9 +11,15 @@ their loved ones and friends.
 
 The application itself was created by using Android Studio, Java programming language, and Agile methodolgy.
 
+
+The video attched shows how the application runs on the emulator on Android Studio and this is how it will run on an android device. 
+https://youtu.be/XQPVxfDmCIE
+
+
+
 Below are few images showing the sign up in page, data flow that we mapped out, and the ER Model:
 
-Registration Page:
+Registration Page from a member android device:
 
 <img width = "197" alt = "Login" src="https://user-images.githubusercontent.com/69876473/165800836-d407448e-181e-4376-827b-172506cdf5e2.jpeg">
 
