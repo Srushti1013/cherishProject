@@ -1,4 +1,4 @@
-# CSC 490 Project:
+# Capstone Project:
 ## Cherish: Android Mobile Application:
 <img width="99" alt="Screen Shot 2022-04-28 at 12 27 56 PM" src="https://user-images.githubusercontent.com/69876473/165800151-2e531a7d-65a6-46d4-be12-8d2535493320.png">
 
