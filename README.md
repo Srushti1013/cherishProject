@@ -18,7 +18,7 @@ The application itself was created by using Android Studio, Java programming lan
 
 
 
-
+#### Access the Doc folder to view the user manual.
 
 ##### Below are few images showing the sign up in page, data flow that we mapped out, and the ER Model:
 
