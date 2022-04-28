@@ -2,7 +2,9 @@
 ## Cherish: Mobile Application:
 <img width="197" alt="Screen Shot 2022-04-28 at 12 27 56 PM" src="https://user-images.githubusercontent.com/69876473/165800151-2e531a7d-65a6-46d4-be12-8d2535493320.png">
 
-![Login](https://user-images.githubusercontent.com/69876473/165800836-d407448e-181e-4376-827b-172506cdf5e2.jpeg)
+<img width = "197" alt = "Login" src="https://user-images.githubusercontent.com/69876473/165800836-d407448e-181e-4376-827b-172506cdf5e2.jpeg">
+
+
 
 Many people lose themselves in their professional life and personal responsibilities. To be able to Cherish time with loved ones and 
 friends becomes a top priority. Our team: Cherish created a mobile application to assist people by reminding them to connect with 
