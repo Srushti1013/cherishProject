@@ -35,3 +35,9 @@ The application itself was created by using Android Studio, Java programming lan
 * ER Model:
 
 <img width="527" alt="Screen Shot 2022-04-28 at 12 27 14 PM" src="https://user-images.githubusercontent.com/69876473/165799997-cb20b6c7-c1ea-4d40-ae61-e3acb16e65a9.png">
+
+### Our Cherish Team:
+Patric Ksor
+Eric Yan
+Srushti Honnenahalli: hsrushti10@gmail.com
+Keshawn Posey
